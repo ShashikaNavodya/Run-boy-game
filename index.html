@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Run Knight</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body onkeyup="kc(event);" class="body" onload="c();">
+    
+    <div id="m">
+        <div id="game" class="game">
+            <img id="boy" class="boy" src="Run (1).png" />
+            <p class="score" id="score">0</p>
+        </div>
+    </div>
+    
+    <div class="start" id="start">
+        <img class="kn" src="Idle (7).png"/>
+        <div class="A">Run Knight</div>
+        <div class="B">Instructions</div>
+        <div class="C">->Escape the fire to win</div>
+        <div class="D">->Press Enter to Start Running</div>
+        <div class="E">->Press Space to Jump</div>
+        <button onclick="startGame();" class="btn">Start</button>
+    </div>
+
+    <div id="end" class="end">
+        <div>Game Over</div>
+        <div style="font-size: 40px;">Your Score</div>
+        <div id="endscore">0</div>
+        <button onclick="reload();" class="btn" style="margin-top: 20px; margin-left: 0;">Try Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
